@@ -3,4 +3,6 @@ project(Pilvi)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Pilvi main.cpp)
+include_directories(include)
+
+add_executable(Pilvi main.cpp exceptions/missing_argument_exception.h)
